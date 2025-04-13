@@ -1,0 +1,307 @@
+DATASET : mem
+FEW_SHOT : False
+FINE_GRIND : False
+NUM_SHOTS : 16
+MODEL : pbm
+UNIMODAL : False
+DATA : ../data
+CAPTION_PATH : ../caption
+CAP_TYPE : origin
+LONG : Longer-
+ASK_CAP : race,gender,country,animal,valid_disable,religion
+RESULT : ./result
+FEAT_DIM : 2048
+CLIP_DIM : 512
+BERT_DIM : 768
+ROBERTA_DIM : 1024
+NUM_FOLD : 5
+EMB_DIM : 300
+NUM_LABELS : 2
+POS_WORD : good
+NEG_WORD : bad
+DEM_SAMP : False
+SIM_RATE : 0.5
+IMG_RATE : 0.5
+TEXT_RATE : 0.5
+CLIP_CLEAN : False
+MULTI_QUERY : True
+NUM_QUERIES : 4
+EMB_DROPOUT : 0.0
+FC_DROPOUT : 0.4
+WEIGHT_DECAY : 0.01
+PLR_RATE : 1e-05
+LR_RATE : 2e-05
+EPS : 1e-08
+CL_LR_RATE : 1.3e-05
+CL_EPS : 1e-08
+CL_RATE : 0.5
+CL_LABEL_RATE : 0.5
+BATCH_SIZE : 16
+FIX_LAYERS : 0
+MID_DIM : 512
+NUM_HIDDEN : 512
+LENGTH : 108
+ADD_LENGTH : 110
+TOTAL_LENGTH : 344
+MARGIN : 0.1
+PREFIX_LENGTH : 10
+NUM_SAMPLE : 1
+NUM_LAYER : 8
+MODEL_NAME : roberta-large
+PRETRAIN_DATA : conceptual
+IMG_VERSION : clean
+MAPPING_TYPE : transformer
+ADD_ENT : True
+ADD_DEM : True
+DEBUG : False
+SAVE : False
+SAVE_NUM : 826
+EPOCHS : 80
+SEED : 1116
+CUDA_DEVICE : 0
+WARM_UP : 2000
+TRANS_LAYER : 1
+NUM_HEAD : 8
+Length of training set: 8500, length of testing set: 500
+Epoch 0
+	train_loss: 1080.08, accuracy: 66.58
+	evaluation auc: 69.19, accuracy: 60.80, macro_f1: 58.32, micro_f1: 60.80
+Epoch 1
+	train_loss: 762.69, accuracy: 78.45
+	evaluation auc: 77.54, accuracy: 61.40, macro_f1: 56.81, micro_f1: 61.40
+Epoch 2
+	train_loss: 614.72, accuracy: 83.74
+	evaluation auc: 72.83, accuracy: 62.00, macro_f1: 58.13, micro_f1: 62.00
+Epoch 3
+	train_loss: 473.95, accuracy: 88.85
+	evaluation auc: 80.80, accuracy: 73.00, macro_f1: 72.59, micro_f1: 73.00
+Epoch 4
+	train_loss: 360.46, accuracy: 91.95
+	evaluation auc: 78.83, accuracy: 68.60, macro_f1: 67.15, micro_f1: 68.60
+Epoch 5
+	train_loss: 269.02, accuracy: 94.19
+	evaluation auc: 80.89, accuracy: 69.40, macro_f1: 67.69, micro_f1: 69.40
+Epoch 6
+	train_loss: 208.28, accuracy: 95.84
+	evaluation auc: 78.67, accuracy: 65.80, macro_f1: 63.11, micro_f1: 65.80
+Epoch 7
+	train_loss: 172.93, accuracy: 96.60
+	evaluation auc: 81.14, accuracy: 71.80, macro_f1: 71.28, micro_f1: 71.80
+Epoch 8
+	train_loss: 147.71, accuracy: 97.25
+	evaluation auc: 78.78, accuracy: 68.40, macro_f1: 66.33, micro_f1: 68.40
+Epoch 9
+	train_loss: 113.99, accuracy: 97.94
+	evaluation auc: 80.31, accuracy: 68.80, macro_f1: 66.68, micro_f1: 68.80
+Epoch 10
+	train_loss: 107.20, accuracy: 98.02
+	evaluation auc: 82.62, accuracy: 73.40, macro_f1: 72.91, micro_f1: 73.40
+Epoch 11
+	train_loss: 80.03, accuracy: 98.73
+	evaluation auc: 80.62, accuracy: 71.20, macro_f1: 70.44, micro_f1: 71.20
+Epoch 12
+	train_loss: 73.63, accuracy: 98.89
+	evaluation auc: 80.15, accuracy: 72.00, macro_f1: 71.59, micro_f1: 72.00
+Epoch 13
+	train_loss: 91.90, accuracy: 98.41
+	evaluation auc: 81.42, accuracy: 69.80, macro_f1: 68.90, micro_f1: 69.80
+Epoch 14
+	train_loss: 62.81, accuracy: 99.11
+	evaluation auc: 79.93, accuracy: 68.20, macro_f1: 66.67, micro_f1: 68.20
+Epoch 15
+	train_loss: 73.19, accuracy: 98.75
+	evaluation auc: 81.99, accuracy: 72.60, macro_f1: 72.21, micro_f1: 72.60
+Epoch 16
+	train_loss: 62.61, accuracy: 99.01
+	evaluation auc: 80.40, accuracy: 68.80, macro_f1: 67.33, micro_f1: 68.80
+Epoch 17
+	train_loss: 56.36, accuracy: 99.21
+	evaluation auc: 81.13, accuracy: 71.40, macro_f1: 70.33, micro_f1: 71.40
+Epoch 18
+	train_loss: 59.70, accuracy: 99.11
+	evaluation auc: 83.15, accuracy: 74.20, macro_f1: 73.95, micro_f1: 74.20
+Epoch 19
+	train_loss: 48.11, accuracy: 99.38
+	evaluation auc: 79.77, accuracy: 68.80, macro_f1: 67.33, micro_f1: 68.80
+Epoch 20
+	train_loss: 48.29, accuracy: 99.31
+	evaluation auc: 82.35, accuracy: 73.40, macro_f1: 73.05, micro_f1: 73.40
+Epoch 21
+	train_loss: 38.34, accuracy: 99.54
+	evaluation auc: 80.86, accuracy: 71.80, macro_f1: 70.92, micro_f1: 71.80
+Epoch 22
+	train_loss: 47.70, accuracy: 99.34
+	evaluation auc: 81.44, accuracy: 70.00, macro_f1: 68.85, micro_f1: 70.00
+Epoch 23
+	train_loss: 41.11, accuracy: 99.54
+	evaluation auc: 82.22, accuracy: 71.20, macro_f1: 70.36, micro_f1: 71.20
+Epoch 24
+	train_loss: 53.40, accuracy: 99.22
+	evaluation auc: 78.22, accuracy: 62.60, macro_f1: 59.17, micro_f1: 62.60
+Epoch 25
+	train_loss: 46.95, accuracy: 99.34
+	evaluation auc: 81.71, accuracy: 71.00, macro_f1: 69.77, micro_f1: 71.00
+Epoch 26
+	train_loss: 41.94, accuracy: 99.52
+	evaluation auc: 82.04, accuracy: 71.40, macro_f1: 70.63, micro_f1: 71.40
+Epoch 27
+	train_loss: 39.92, accuracy: 99.56
+	evaluation auc: 81.65, accuracy: 69.60, macro_f1: 68.05, micro_f1: 69.60
+Epoch 28
+	train_loss: 35.98, accuracy: 99.59
+	evaluation auc: 80.69, accuracy: 68.60, macro_f1: 66.85, micro_f1: 68.60
+Epoch 29
+	train_loss: 25.26, accuracy: 99.78
+	evaluation auc: 81.05, accuracy: 68.20, macro_f1: 66.55, micro_f1: 68.20
+Epoch 30
+	train_loss: 46.62, accuracy: 99.36
+	evaluation auc: 80.51, accuracy: 65.80, macro_f1: 62.66, micro_f1: 65.80
+Epoch 31
+	train_loss: 43.05, accuracy: 99.44
+	evaluation auc: 80.51, accuracy: 71.20, macro_f1: 70.44, micro_f1: 71.20
+Epoch 32
+	train_loss: 34.22, accuracy: 99.55
+	evaluation auc: 81.52, accuracy: 69.20, macro_f1: 67.51, micro_f1: 69.20
+Epoch 33
+	train_loss: 29.47, accuracy: 99.72
+	evaluation auc: 80.71, accuracy: 71.80, macro_f1: 70.70, micro_f1: 71.80
+Epoch 34
+	train_loss: 33.77, accuracy: 99.59
+	evaluation auc: 80.01, accuracy: 71.20, macro_f1: 70.05, micro_f1: 71.20
+Epoch 35
+	train_loss: 30.58, accuracy: 99.66
+	evaluation auc: 79.15, accuracy: 68.60, macro_f1: 66.65, micro_f1: 68.60
+Epoch 36
+	train_loss: 41.07, accuracy: 99.46
+	evaluation auc: 80.19, accuracy: 71.60, macro_f1: 70.69, micro_f1: 71.60
+Epoch 37
+	train_loss: 31.97, accuracy: 99.60
+	evaluation auc: 81.34, accuracy: 71.40, macro_f1: 70.03, micro_f1: 71.40
+Epoch 38
+	train_loss: 23.85, accuracy: 99.84
+	evaluation auc: 80.97, accuracy: 68.20, macro_f1: 66.15, micro_f1: 68.20
+Epoch 39
+	train_loss: 20.15, accuracy: 99.88
+	evaluation auc: 81.69, accuracy: 70.40, macro_f1: 69.27, micro_f1: 70.40
+Epoch 40
+	train_loss: 30.90, accuracy: 99.65
+	evaluation auc: 83.16, accuracy: 73.40, macro_f1: 72.49, micro_f1: 73.40
+Epoch 41
+	train_loss: 25.12, accuracy: 99.74
+	evaluation auc: 82.65, accuracy: 75.00, macro_f1: 74.51, micro_f1: 75.00
+Epoch 42
+	train_loss: 28.10, accuracy: 99.74
+	evaluation auc: 81.04, accuracy: 72.00, macro_f1: 71.06, micro_f1: 72.00
+Epoch 43
+	train_loss: 18.17, accuracy: 99.91
+	evaluation auc: 80.38, accuracy: 72.00, macro_f1: 70.97, micro_f1: 72.00
+Epoch 44
+	train_loss: 19.49, accuracy: 99.88
+	evaluation auc: 80.52, accuracy: 68.20, macro_f1: 66.29, micro_f1: 68.20
+Epoch 45
+	train_loss: 26.41, accuracy: 99.78
+	evaluation auc: 81.53, accuracy: 70.20, macro_f1: 69.48, micro_f1: 70.20
+Epoch 46
+	train_loss: 18.43, accuracy: 99.88
+	evaluation auc: 79.33, accuracy: 68.80, macro_f1: 67.33, micro_f1: 68.80
+Epoch 47
+	train_loss: 32.03, accuracy: 99.68
+	evaluation auc: 81.23, accuracy: 70.20, macro_f1: 68.98, micro_f1: 70.20
+Epoch 48
+	train_loss: 21.05, accuracy: 99.85
+	evaluation auc: 81.77, accuracy: 71.20, macro_f1: 69.95, micro_f1: 71.20
+Epoch 49
+	train_loss: 23.67, accuracy: 99.76
+	evaluation auc: 81.95, accuracy: 71.20, macro_f1: 70.10, micro_f1: 71.20
+Epoch 50
+	train_loss: 24.03, accuracy: 99.81
+	evaluation auc: 82.51, accuracy: 72.00, macro_f1: 70.93, micro_f1: 72.00
+Epoch 51
+	train_loss: 15.82, accuracy: 99.94
+	evaluation auc: 82.20, accuracy: 70.60, macro_f1: 69.24, micro_f1: 70.60
+Epoch 52
+	train_loss: 14.91, accuracy: 99.93
+	evaluation auc: 82.21, accuracy: 73.20, macro_f1: 72.42, micro_f1: 73.20
+Epoch 53
+	train_loss: 22.73, accuracy: 99.84
+	evaluation auc: 82.19, accuracy: 70.20, macro_f1: 68.77, micro_f1: 70.20
+Epoch 54
+	train_loss: 16.44, accuracy: 99.91
+	evaluation auc: 73.25, accuracy: 70.20, macro_f1: 68.83, micro_f1: 70.20
+Epoch 55
+	train_loss: 23.57, accuracy: 99.84
+	evaluation auc: 82.74, accuracy: 70.40, macro_f1: 69.32, micro_f1: 70.40
+Epoch 56
+	train_loss: 15.60, accuracy: 99.92
+	evaluation auc: 82.63, accuracy: 71.60, macro_f1: 70.60, micro_f1: 71.60
+Epoch 57
+	train_loss: 16.14, accuracy: 99.92
+	evaluation auc: 82.11, accuracy: 72.80, macro_f1: 72.05, micro_f1: 72.80
+Epoch 58
+	train_loss: 15.29, accuracy: 99.93
+	evaluation auc: 80.41, accuracy: 70.40, macro_f1: 68.95, micro_f1: 70.40
+Epoch 59
+	train_loss: 17.44, accuracy: 99.93
+	evaluation auc: 82.16, accuracy: 71.00, macro_f1: 69.66, micro_f1: 71.00
+Epoch 60
+	train_loss: 19.20, accuracy: 99.88
+	evaluation auc: 81.92, accuracy: 70.00, macro_f1: 68.53, micro_f1: 70.00
+Epoch 61
+	train_loss: 15.25, accuracy: 99.91
+	evaluation auc: 82.30, accuracy: 68.40, macro_f1: 66.03, micro_f1: 68.40
+Epoch 62
+	train_loss: 19.43, accuracy: 99.87
+	evaluation auc: 82.04, accuracy: 70.00, macro_f1: 68.80, micro_f1: 70.00
+Epoch 63
+	train_loss: 15.48, accuracy: 99.93
+	evaluation auc: 82.01, accuracy: 69.80, macro_f1: 68.41, micro_f1: 69.80
+Epoch 64
+	train_loss: 17.50, accuracy: 99.91
+	evaluation auc: 82.13, accuracy: 72.00, macro_f1: 71.19, micro_f1: 72.00
+Epoch 65
+	train_loss: 16.60, accuracy: 99.91
+	evaluation auc: 81.00, accuracy: 70.60, macro_f1: 69.35, micro_f1: 70.60
+Epoch 66
+	train_loss: 14.74, accuracy: 99.94
+	evaluation auc: 81.57, accuracy: 71.60, macro_f1: 70.51, micro_f1: 71.60
+Epoch 67
+	train_loss: 15.57, accuracy: 99.93
+	evaluation auc: 82.42, accuracy: 72.20, macro_f1: 71.37, micro_f1: 72.20
+Epoch 68
+	train_loss: 17.90, accuracy: 99.91
+	evaluation auc: 82.23, accuracy: 69.60, macro_f1: 67.99, micro_f1: 69.60
+Epoch 69
+	train_loss: 15.03, accuracy: 99.93
+	evaluation auc: 81.95, accuracy: 70.80, macro_f1: 69.43, micro_f1: 70.80
+Epoch 70
+	train_loss: 13.99, accuracy: 99.95
+	evaluation auc: 82.01, accuracy: 71.20, macro_f1: 70.00, micro_f1: 71.20
+Epoch 71
+	train_loss: 13.97, accuracy: 99.95
+	evaluation auc: 81.99, accuracy: 71.20, macro_f1: 70.00, micro_f1: 71.20
+Epoch 72
+	train_loss: 14.58, accuracy: 99.93
+	evaluation auc: 81.79, accuracy: 70.40, macro_f1: 69.06, micro_f1: 70.40
+Epoch 73
+	train_loss: 16.21, accuracy: 99.91
+	evaluation auc: 81.52, accuracy: 69.60, macro_f1: 68.17, micro_f1: 69.60
+Epoch 74
+	train_loss: 14.65, accuracy: 99.94
+	evaluation auc: 81.82, accuracy: 71.60, macro_f1: 70.69, micro_f1: 71.60
+Epoch 75
+	train_loss: 13.92, accuracy: 99.95
+	evaluation auc: 82.06, accuracy: 71.60, macro_f1: 70.73, micro_f1: 71.60
+Epoch 76
+	train_loss: 13.97, accuracy: 99.95
+	evaluation auc: 81.97, accuracy: 71.60, macro_f1: 70.73, micro_f1: 71.60
+Epoch 77
+	train_loss: 15.26, accuracy: 99.94
+	evaluation auc: 81.80, accuracy: 71.20, macro_f1: 70.19, micro_f1: 71.20
+Epoch 78
+	train_loss: 13.95, accuracy: 99.95
+	evaluation auc: 81.74, accuracy: 71.20, macro_f1: 70.19, micro_f1: 71.20
+Epoch 79
+	train_loss: 13.92, accuracy: 99.95
+	evaluation auc: 81.79, accuracy: 71.40, macro_f1: 70.38, micro_f1: 71.40
+Maximum epoch: 41
+	evaluation auc: 82.65, accuracy: 75.00, macro_f1: 74.51, micro_f1: 75.00

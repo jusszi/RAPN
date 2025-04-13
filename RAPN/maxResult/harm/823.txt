@@ -1,0 +1,97 @@
+DATASET : harm
+FEW_SHOT : False
+FINE_GRIND : False
+NUM_SHOTS : 16
+MODEL : pbm
+UNIMODAL : False
+DATA : ../data
+CAPTION_PATH : ../caption
+CAP_TYPE : origin
+LONG : Longer-
+ASK_CAP : race,gender,country,animal,valid_disable,religion
+RESULT : ./result
+FEAT_DIM : 2048
+CLIP_DIM : 512
+BERT_DIM : 768
+ROBERTA_DIM : 1024
+NUM_FOLD : 5
+EMB_DIM : 300
+NUM_LABELS : 2
+POS_WORD : good
+NEG_WORD : bad
+DEM_SAMP : False
+SIM_RATE : 0.5
+IMG_RATE : 0.5
+TEXT_RATE : 0.5
+CLIP_CLEAN : False
+MULTI_QUERY : True
+NUM_QUERIES : 4
+EMB_DROPOUT : 0.0
+FC_DROPOUT : 0.4
+WEIGHT_DECAY : 0.01
+PLR_RATE : 9e-06
+LR_RATE : 4e-05
+EPS : 1e-08
+CL_LR_RATE : 1.3e-05
+CL_EPS : 1e-08
+CL_RATE : 0.3
+CL_LABEL_RATE : 0.5
+BATCH_SIZE : 16
+FIX_LAYERS : 0
+MID_DIM : 512
+NUM_HIDDEN : 512
+LENGTH : 108
+ADD_LENGTH : 130
+TOTAL_LENGTH : 344
+MARGIN : 0.1
+PREFIX_LENGTH : 10
+NUM_SAMPLE : 1
+NUM_LAYER : 8
+MODEL_NAME : roberta-large
+PRETRAIN_DATA : conceptual
+IMG_VERSION : clean
+MAPPING_TYPE : transformer
+ADD_ENT : True
+ADD_DEM : True
+DEBUG : False
+SAVE : False
+SAVE_NUM : 823
+EPOCHS : 10
+SEED : 1113
+CUDA_DEVICE : 0
+WARM_UP : 2000
+TRANS_LAYER : 1
+NUM_HEAD : 8
+Length of training set: 3013, length of testing set: 354
+Epoch 0
+	train_loss: 371.20, accuracy: 67.28
+	evaluation auc: 93.40, accuracy: 89.27, macro_f1: 88.33, micro_f1: 89.27
+Epoch 1
+	train_loss: 257.76, accuracy: 79.52
+	evaluation auc: 92.16, accuracy: 84.18, macro_f1: 83.42, micro_f1: 84.18
+Epoch 2
+	train_loss: 220.97, accuracy: 83.04
+	evaluation auc: 90.53, accuracy: 83.33, macro_f1: 81.92, micro_f1: 83.33
+Epoch 3
+	train_loss: 184.39, accuracy: 86.36
+	evaluation auc: 90.63, accuracy: 76.84, macro_f1: 76.62, micro_f1: 76.84
+Epoch 4
+	train_loss: 147.76, accuracy: 89.74
+	evaluation auc: 86.83, accuracy: 77.68, macro_f1: 76.58, micro_f1: 77.68
+Epoch 5
+	train_loss: 112.21, accuracy: 92.63
+	evaluation auc: 87.20, accuracy: 78.81, macro_f1: 77.87, micro_f1: 78.81
+Epoch 6
+	train_loss: 76.06, accuracy: 95.45
+	evaluation auc: 86.74, accuracy: 78.81, macro_f1: 77.82, micro_f1: 78.81
+Epoch 7
+	train_loss: 60.45, accuracy: 96.38
+	evaluation auc: 88.73, accuracy: 76.84, macro_f1: 76.40, micro_f1: 76.84
+Epoch 8
+	train_loss: 47.22, accuracy: 97.38
+	evaluation auc: 87.44, accuracy: 79.94, macro_f1: 79.24, micro_f1: 79.94
+Epoch 9
+	train_loss: 37.19, accuracy: 98.08
+	evaluation auc: 87.65, accuracy: 80.23, macro_f1: 79.56, micro_f1: 80.23
+Maximum epoch: 0
+	evaluation auc: 93.40, accuracy: 89.27, macro_f1: 88.33, micro_f1: 89.27
